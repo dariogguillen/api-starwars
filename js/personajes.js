@@ -26,14 +26,10 @@ const person = {
     person7: 'R5_D4',
     person8: 'Biggs_Darklighter',
     person9: 'Obi_Wan_Kenobi',
-    person10: 'Todos'
 };
 
-
 const setCard = (json) =>{
-    
     const card = (json, i) => {
-        
         let card = `
         <div class='carta card${[i]}'>
             <div class='info'>
@@ -49,29 +45,20 @@ const setCard = (json) =>{
         </div>`;
 
         let containerDiv = document.createElement('div');
-        containerDiv.setAttribute('class', 'card')
+        containerDiv.setAttribute('class', 'card');
         container.appendChild(containerDiv);
         containerDiv.innerHTML = card;
-        
     }
     
     const removeCard = () => {
         const selectCard = document.querySelectorAll('.card');
         let long = selectCard.length;
         for (let i = 0; i < long; i++) {
-            
             container.removeChild(selectCard[i]);
-            
         }
     }
 
-    if (personaje.value == person.person10 || personaje.value == undefined) {
-        removeCard();
-        let long = json.results.length
-        for (let i = 0; i < long; i++) {
-            card(json, i)
-        }
-    } else if ( personaje.value == person.person0 ) {
+    if ( personaje.value == person.person0 ) {
         removeCard();
         card(json, 0);
     } else if (personaje.value == person.person1) {
@@ -101,18 +88,19 @@ const setCard = (json) =>{
     } else if (personaje.value == person.person9) {
         removeCard();
         card(json, 9);
+    } else {
+        removeCard();
+        let long = json.results.length
+        for (let i = 0; i < long; i++) {
+            card(json, i)
+        }
     }
-    
-    console.log(personaje.value)
-    // changeValue(card);
 }
 
 const star = () => {
     if (request.status == 200) {
-        console.log('esta bien');
         let json = JSON.parse(request.responseText);
         setCard(json);
-
     } else {
         console.log('no esta bien');
     }
