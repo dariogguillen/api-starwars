@@ -9,6 +9,19 @@ html(lang="es")
         link(href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet")
     body
         h1 Consumiendo API StarWars
+        label.personaje(for="personaje") Selecciona una personaje
+        select#personaje
+            option(value="Todos") Todos
+            option(value="Luke_Skywalker") Luke Skywalker
+            option(value="C_3PO") C-3PO
+            option(value="R2_D2") R2-D2
+            option(value="Darth_Vader") Darth Vader
+            option(value="Leia_Organa") Leia Organa
+            option(value="Owen_Lars") Owen Lars
+            option(value="Beru_Whitesun_Lars") Beru Whitesun Lars
+            option(value="R5_D4") R5-D4
+            option(value="Biggs_Darklighter") Biggs Darklighter
+            option(value="Obi_Wan_Kenobi") Obi-Wan Kenobi
         #container.container
         //- .card
         //-     h2.nombre Nombre del Personaje:
