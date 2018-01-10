@@ -9,6 +9,11 @@ html(lang="es")
         link(href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet")
     body
         h1 Consumiendo API StarWars
+        .containerButtons
+            h3 ¿Qué quieres ver?
+            button#person.button Personajes
+            button#planet.button Planetas
+            //- button#starship.button Naves
         label.personaje(for="personaje") Selecciona una personaje
         select#personaje
             option(value="Todos") Todos
@@ -23,12 +28,4 @@ html(lang="es")
             option(value="Biggs_Darklighter") Biggs Darklighter
             option(value="Obi_Wan_Kenobi") Obi-Wan Kenobi
         #container.container
-        //- .card
-        //-     h2.nombre Nombre del Personaje:
-        //-     p.genero Genero:
-        //-     p.nacimiento Nacimiento:
-        //-     p.altura Altura:
-        //-     p.peso Peso:
-
-
-        script(src="js/main.js")
+        script(src="js/personajes.js")

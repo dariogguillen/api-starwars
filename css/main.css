@@ -5,8 +5,10 @@
 }
 
 body {
-  background-image: url(https://wallpapercave.com/wp/ItmVuT6.jpg);
-  background-size: contain;
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
   color: white;
 }
@@ -14,6 +16,25 @@ body {
 body h1 {
   text-align: center;
   text-transform: uppercase;
+}
+
+body .containerButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+body .containerButtons h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  width: 100%;
+}
+
+body .containerButtons .button {
+  width: 120px;
+  font-size: 16px;
 }
 
 body .personaje {
@@ -65,11 +86,12 @@ body .container .card {
 
 body .container .card .carta {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  align-items: center;
 }
 
 body .container .card .carta .info {
+  padding-left: 30px;
+  padding-bottom: 10px;
   width: 50%;
 }
 
@@ -79,5 +101,5 @@ body .container .card .carta .image {
 }
 
 body .container .card .carta .image img {
-  width: 250px;
+  width: 300px;
 }
