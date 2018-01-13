@@ -14,22 +14,49 @@
       <h3>¿Qué quieres ver?</h3>
       <button class="button" id="person">Personajes</button>
       <button class="button" id="planet">Planetas</button>
+      <button class="button" id="starship">Naves</button>
     </div>
-    <label class="personaje" for="personaje">Selecciona una personaje</label>
-    <select id="personaje">
-      <option value="Todos">Todos</option>
-      <option value="Luke_Skywalker">Luke Skywalker</option>
-      <option value="C_3PO">C-3PO</option>
-      <option value="R2_D2">R2-D2</option>
-      <option value="Darth_Vader">Darth Vader</option>
-      <option value="Leia_Organa">Leia Organa</option>
-      <option value="Owen_Lars">Owen Lars</option>
-      <option value="Beru_Whitesun_Lars">Beru Whitesun Lars</option>
-      <option value="R5_D4">R5-D4</option>
-      <option value="Biggs_Darklighter">Biggs Darklighter</option>
-      <option value="Obi_Wan_Kenobi">Obi-Wan Kenobi</option>
-    </select>
-    <div class="container" id="container"></div>
+    <div class="visible" id="containerImg"><img src="img/star-wars-characters.jpg" alt="Imagen de StarWars"></div>
+    <div class="invisible" id="mainContainer">
+      <div class="containerLabel" id="containerLabel">
+        <div id="personajeLabelContainer">
+          <label class="label" id="personajeLaber" for="personaje">Selecciona una personaje</label>
+          <select id="personaje">
+            <option value="Todos">Todos</option>
+            <option value="Luke_Skywalker">Luke Skywalker</option>
+            <option value="C_3PO">C-3PO</option>
+            <option value="R2_D2">R2-D2</option>
+            <option value="Darth_Vader">Darth Vader</option>
+            <option value="Leia_Organa">Leia Organa</option>
+            <option value="Owen_Lars">Owen Lars</option>
+            <option value="Beru_Whitesun_Lars">Beru Whitesun Lars</option>
+            <option value="R5_D4">R5-D4</option>
+            <option value="Biggs_Darklighter">Biggs Darklighter</option>
+            <option value="Obi_Wan_Kenobi">Obi-Wan Kenobi</option>
+          </select>
+        </div>
+        <div id="planetaLabelContainer">
+          <label class="label" id="planetaLabel" for="planetas">Selecciona una Planeta</label>
+          <select id="planetas">
+            <option value="Todos">Todos</option>
+            <option value="Alderaan">Alderaan</option>
+            <option value="Yavin_IV">Yavin IV</option>
+            <option value="Hoth">Hoth</option>
+            <option value="Dagobah">Dagobah</option>
+            <option value="Bespin">Bespin</option>
+            <option value="Endor">Endor</option>
+            <option value="Naboo">Naboo</option>
+            <option value="Coruscant">Coruscant</option>
+            <option value="Kamino">Kamino</option>
+            <option value="Geonosis">Geonosis</option>
+          </select>
+        </div>
+        <div id="naveLabelContainer"></div>
+      </div>
+      <div class="container" id="container"></div>
+    </div>
     <script src="js/personajes.js"></script>
+    <script src="js/planetas.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

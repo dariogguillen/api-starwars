@@ -1,105 +1,90 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   background-image: url("../img/background.jpg");
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Ubuntu', sans-serif;
-  color: white;
-}
+  font-family: "Ubuntu", sans-serif;
+  color: white; }
+  body h1 {
+    text-align: center;
+    text-transform: uppercase; }
+  body .containerButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+    body .containerButtons h3 {
+      text-align: center;
+      font-weight: normal;
+      font-size: 25px;
+      width: 100%; }
+    body .containerButtons .button {
+      width: 120px;
+      font-size: 16px; }
+  body #containerImg {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto; }
+    body #containerImg img {
+      width: 90%; }
+  body .visible {
+    display: block; }
+  body .invisible {
+    display: none; }
+  body #mainContainer {
+    width: 90%;
+    margin: 0 auto; }
+    body #mainContainer .containerLabel {
+      width: 80%;
+      margin: 0 auto; }
+      body #mainContainer .containerLabel .label {
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px; }
+      body #mainContainer .containerLabel #personajeLabelContainer select,
+      body #mainContainer .containerLabel #planetaLabelContainer select {
+        font-size: 16px;
+        display: block;
+        width: 200px;
+        margin: 10px auto; }
+    body #mainContainer .container {
+      width: 90%;
+      margin: 0 auto; }
+      body #mainContainer .container h2 {
+        color: #808B97; }
+        body #mainContainer .container h2 span {
+          font-weight: normal;
+          color: #fff; }
+      body #mainContainer .container p {
+        font-weight: bold;
+        color: #808B97; }
+        body #mainContainer .container p span {
+          font-weight: normal;
+          color: #fff; }
+      body #mainContainer .container .card {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: -3px 3px 10px 3px white;
+        border-radius: 20px;
+        margin: 15px 0 15px 0;
+        padding: 20px;
+        width: 100%; }
+        body #mainContainer .container .card .carta {
+          display: flex;
+          align-items: center; }
+          body #mainContainer .container .card .carta .info {
+            padding-left: 30px;
+            padding-bottom: 10px;
+            width: 50%; }
+          body #mainContainer .container .card .carta .image {
+            text-align: center;
+            width: 50%; }
+            body #mainContainer .container .card .carta .image img {
+              width: 300px; }
 
-body h1 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-body .containerButtons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 30px;
-}
-
-body .containerButtons h3 {
-  text-align: center;
-  font-weight: normal;
-  font-size: 25px;
-  width: 100%;
-}
-
-body .containerButtons .button {
-  width: 120px;
-  font-size: 16px;
-}
-
-body .personaje {
-  font-size: 25px;
-  text-align: center;
-  display: block;
-  margin-bottom: 10px;
-}
-
-body #personaje {
-  font-size: 16px;
-  display: block;
-  width: 200px;
-  margin: 0 auto;
-}
-
-body .container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-body .container h2 {
-  color: #808B97;
-}
-
-body .container h2 span {
-  font-weight: normal;
-  color: #fff;
-}
-
-body .container p {
-  font-weight: bold;
-  color: #808B97;
-}
-
-body .container p span {
-  font-weight: normal;
-  color: #fff;
-}
-
-body .container .card {
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: -3px 3px 10px 3px white;
-  border-radius: 20px;
-  margin: 15px 0 15px 0;
-  padding: 20px;
-  width: 100%;
-}
-
-body .container .card .carta {
-  display: flex;
-  align-items: center;
-}
-
-body .container .card .carta .info {
-  padding-left: 30px;
-  padding-bottom: 10px;
-  width: 50%;
-}
-
-body .container .card .carta .image {
-  text-align: center;
-  width: 50%;
-}
-
-body .container .card .carta .image img {
-  width: 300px;
-}
+/*# sourceMappingURL=main.css.map */

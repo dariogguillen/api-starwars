@@ -13,19 +13,50 @@ html(lang="es")
             h3 ¿Qué quieres ver?
             button#person.button Personajes
             button#planet.button Planetas
-            //- button#starship.button Naves
-        label.personaje(for="personaje") Selecciona una personaje
-        select#personaje
-            option(value="Todos") Todos
-            option(value="Luke_Skywalker") Luke Skywalker
-            option(value="C_3PO") C-3PO
-            option(value="R2_D2") R2-D2
-            option(value="Darth_Vader") Darth Vader
-            option(value="Leia_Organa") Leia Organa
-            option(value="Owen_Lars") Owen Lars
-            option(value="Beru_Whitesun_Lars") Beru Whitesun Lars
-            option(value="R5_D4") R5-D4
-            option(value="Biggs_Darklighter") Biggs Darklighter
-            option(value="Obi_Wan_Kenobi") Obi-Wan Kenobi
-        #container.container
+            button#starship.button Naves
+
+        #containerImg.visible
+            img(src="img/star-wars-characters.jpg", alt="Imagen de StarWars")
+
+        #mainContainer.invisible
+
+            #containerLabel.containerLabel
+                //- Selector de personajes
+                #personajeLabelContainer
+                    label#personajeLaber.label(for="personaje") Selecciona una personaje
+                    select#personaje
+                        option(value="Todos") Todos
+                        option(value="Luke_Skywalker") Luke Skywalker
+                        option(value="C_3PO") C-3PO
+                        option(value="R2_D2") R2-D2
+                        option(value="Darth_Vader") Darth Vader
+                        option(value="Leia_Organa") Leia Organa
+                        option(value="Owen_Lars") Owen Lars
+                        option(value="Beru_Whitesun_Lars") Beru Whitesun Lars
+                        option(value="R5_D4") R5-D4
+                        option(value="Biggs_Darklighter") Biggs Darklighter
+                        option(value="Obi_Wan_Kenobi") Obi-Wan Kenobi
+
+                //- Selector de Planetas
+                #planetaLabelContainer
+                    label#planetaLabel.label(for="planetas") Selecciona una Planeta
+                    select#planetas
+                        option(value="Todos") Todos
+                        option(value="Alderaan") Alderaan
+                        option(value="Yavin_IV") Yavin IV
+                        option(value="Hoth") Hoth
+                        option(value="Dagobah") Dagobah
+                        option(value="Bespin") Bespin
+                        option(value="Endor") Endor
+                        option(value="Naboo") Naboo
+                        option(value="Coruscant") Coruscant
+                        option(value="Kamino") Kamino
+                        option(value="Geonosis") Geonosis
+
+                #naveLabelContainer
+
+            //- Contenedor
+            #container.container
         script(src="js/personajes.js")
+        script(src="js/planetas.js")
+        script(src="js/main.js")
